@@ -21,7 +21,7 @@ public class CSVController {
 
     @PostMapping
     public String read(@RequestParam("file") MultipartFile file) throws IOException {
-        mainService.ProcessData(file);
+        // mainService.ProcessData(file);
         return "Success";
     }
 }
